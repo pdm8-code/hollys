@@ -129,6 +129,14 @@ $(document).ready(function(){
     $('html, body').css({'overflow': 'visible'});
   });
 
+  $(window).resize(function(){
+    if($(this).width() > 1000){
+      $(".site-map").removeClass("active");
+      $(".background").removeClass("active");
+      $('html, body').css({'overflow': 'visible'});
+    }
+  });
+
 
   // 섹션 비쥬얼2 nav 텍스트 변환 
   var a = $(".visual2 .container .visual-bot .nav-menu a");
@@ -216,4 +224,12 @@ $(document).ready(function(){
   $(".side-btn .top-btn").click(function(){
     $("html, body").animate({scrollTop: 0}, 400);
   });
+
+
+
+
+
+
+
 });
+
